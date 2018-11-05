@@ -1,0 +1,10 @@
+Yizhou Wu
+2854933
+EECS_448_LAB#6
+
+BUGS:
+isEmpty():    Function failed to return false for nonempty list.
+addBack():    Function failed add the nodes from back, the list turned out to have 1 at the end.
+              While the list is 1,2,3,4
+removeBack(): Function failed to remove the target value and the list size did not change.
+removeFront():Function failed to remove the target value and the list size did not change.

@@ -99,11 +99,13 @@ void Test::test4()
     if(list.toVector().back()==4)
     {
         cout<<"The back of the list return:"<<list.toVector().back()<<"\n";
+        cout<<"Test 4:The size of the list return:"<<list.size()<<"\n";
         cout<<"Test 4:PASSED.\n\n";
     }
     else
     {
         cout<<"The back of the list return:"<<list.toVector().back()<<"\n";
+        cout<<"Test 4:The size of the list return:"<<list.size()<<"\n";
         cout<<"Test 4:FAILED.\n\n";
     }
 }
@@ -118,11 +120,13 @@ void Test::test5()
     if(list.toVector().front()==4)
     {
         cout<<"The front of the list return:"<<list.toVector().front()<<"\n";
+        cout<<"Test 5:The size of the list return:"<<list.size()<<"\n";
         cout<<"Test 5:PASSED.\n\n";
     }
     else
     {
         cout<<"The front of the list return:"<<list.toVector().front()<<"\n";
+        cout<<"Test 5:The size of the list return:"<<list.size()<<"\n";
         cout<<"Test 5:FAILED.\n\n";
     }
 }

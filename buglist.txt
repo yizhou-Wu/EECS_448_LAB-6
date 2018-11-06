@@ -4,7 +4,18 @@ EECS_448_LAB#6
 
 BUGS:
 isEmpty():    Function failed to return false for nonempty list.
-addBack():    Function failed add the nodes from back, the list turned out to have 1 at the end.
-              While the list is 1,2,3,4
+Cause:	      It turned out that the addFront() and addBack() update the size after they 		      inserting the nodes and the size() function works properly. My guess is that 		      this function always return true when it was implemented.
+-------------------------------------------------------------------------------------------
+addBack():    Function failed add the nodes from back, the list turned out to have 1 at the 		      end.While the list is 1,2,3,4.
+Cause:	      It seems that addBack() is doing the same job as the addFront() does.My guess 		      is that this function was copied from the addFront() and it was not changed    		      after that.
+-------------------------------------------------------------------------------------------
 removeBack(): Function failed to remove the target value and the list size did not change.
+Cause:	      The reason why this function failed should be the problem of the isEmpty().
+	      It should always check whether the list is empty or not before removing.And 
+	      isEmpty() always return true, which makes the removeBack() doing nothing when 		      it is called.
+-------------------------------------------------------------------------------------------
 removeFront():Function failed to remove the target value and the list size did not change.
+Cause:	      The reason why this function failed should be the problem of the isEmpty().
+	      It should always check whether the list is empty or not before removing.And 
+	      isEmpty() always return true, which makes the removeFront() doing nothing when 		      it is called.
+-------------------------------------------------------------------------------------------
